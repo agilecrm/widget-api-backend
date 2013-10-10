@@ -7,7 +7,7 @@ Widgets are small application which can be built by end users and embedded in th
 
 Whenever a widget is loaded (or a contact page is loaded with widget enabled), contact details are sent to the server, mentioned in the URL field, via POST method. Contact details are sent in the form of json object. Server has to preocess this data and returns the HTML body which will be further embedded to the html segment allocated to the widget at the contact page.
 
-***Access:*** Global widget property, widget property wrt to contact and contact details.
+***Access:*** Contact details.
 
 Contact data will be posted in the form of JSON as 
 
@@ -35,15 +35,21 @@ Contact data will be posted in the form of JSON as
             "properties": [
                 {
                     "type": "SYSTEM",
+                    "name": "first_name",
+                    "subtype": null,
+                    "value": "George"
+                },
+                {
+                    "type": "SYSTEM",
                     "name": "last_name",
                     "subtype": null,
-                    "value": "test"
+                    "value": "Bernardshaw"
                 },
                 {
                     "type": "SYSTEM",
                     "name": "title",
                     "subtype": null,
-                    "value": "Software Developer at Agile CRM"
+                    "value": "Author"
                 },
                 {
                     "type": "SYSTEM",
@@ -61,7 +67,7 @@ Contact data will be posted in the form of JSON as
             "widget_properties": null,
             "owner": {
                 "id": 1450,
-                "email": "tejaswi@agilecrm.com",
+                "email": "contact@agilecrm.com",
                 "is_admin": false
             }
         }
