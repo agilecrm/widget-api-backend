@@ -1,19 +1,12 @@
-﻿AGILE CRM WIDGETS
+﻿AGILE CRM BACKEND WIDGETS
 =================
-
-INTRODUCTION
-------------
-
-This API allows you to develop widgets for Agile CRM.   
 
 Widgets are small application which can be built by end users and embedded in the contact’s page in Agile CRM. It is a HTML/JavaScript segment which is executed whenever a contact page is loaded. Every contact page has some html segment allocated for the widget.
 
-These widgets have access to contact details and/or external resources in order to return some meaningful collection of data. These widgets add extra functionality to the AgileCRM contacts page.
+*Custom* tab, located at `https://<your_domain>.agilecrm.com/#add-widget/` provides option to add widget. There are two methods to upload a widget. You have to select `URL` from dropdown menu to create method using this method.
 
-*Custom* tab, located at `https://<your_domain>.agilecrm.com/#add-widget/` provides option to add widget. There are two methods to upload a widget.
+Whenever a widget is loaded (or a contact page is loaded with widget enabled), contact details are sent to the server, mentioned in the URL field, via POST method. Contact details are sent in the form of json object. Server has to preocess this data and returns the HTML body which will be further embedded to the html segment allocated to the widget at the contact page.
 
-
-In this method contact details are sent to the server, mentioned in the URL field, via POST method. Contact details are sent in form of json object. The server process this contact details and returns the HTML body which is further embedded to the html segment allocated to the widget at the contact page.   
 ***Access:*** Global widget property, widget property wrt to contact and contact details.
 
 Contact data will be posted in the form of JSON as 
