@@ -5,7 +5,7 @@ Widgets are small application which can be built by end users and embedded in th
 
 *Custom* tab, located at `https://<your_domain>.agilecrm.com/#add-widget/` provides option to add widget. There are two methods to upload a widget. You have to select `URL` from dropdown menu to create method using this method.
 
-Whenever a widget is loaded (or a contact page is loaded with widget enabled), contact details are sent to the server, mentioned in the URL field, via POST method. Contact details are sent in the form of json object. Server has to preocess this data and returns the HTML body which will be further embedded to the html segment allocated to the widget at the contact page.
+Whenever a widget is loaded (or a contact page is loaded with widget enabled), contact details are sent to the server, mentioned in the URL field, via POST method. Contact details are sent in the form of json object. Server has to process this data and returns the HTML body which will be further embedded to the html segment allocated to the widget at the contact page.
 
 ***Access:*** Contact details.
 
