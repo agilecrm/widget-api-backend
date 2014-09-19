@@ -3,9 +3,8 @@
 
 Widgets are small application that can be built by end users and embedded in a contact’s page in AgileCRM. They are HTML/JavaScript segmentsthat are executed whenever a contact page is loaded. Every contact page has some html segment allocated for a custom widget.
 
-*Custom* tab, located at `https://<your_domain>.agilecrm.com/#add-widget/` provides the option to add a custom widget. By clicking the dropdown, you can see that there are two ways to upload a widget. 
-
-To use this doc, select `Webhook URL`.
+*Custom Widget* , located at `https://<your_domain>.agilecrm.com/#add-widget/` provides the option to add a custom widget. By clicking the dropdown, you can see that there are two ways to upload a widget. This document deals with `Webhook URL` option. 
+For the HTML option, please refer - https://github.com/agilecrm/widget-api-html
 
 Whenever a widget is loaded (or a contact page is loaded with the widget enabled), contact details are sent to the webhook, via POST method. Contact details are sent in the form of a JSON object. The server then processes this data and returns the HTML body that is to be embedded in the html segment allocated to the widget in the contact page.
 
